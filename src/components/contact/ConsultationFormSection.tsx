@@ -28,7 +28,7 @@ export const ConsultationFormSection: React.FC = () => {
           <div className="lg:col-span-5 space-y-8">
             <div>
               <div className="mb-6 uppercase tracking-[0.2em] text-[#707070] text-xs font-semibold">
-                Discovery Protocol &bull; Consultation Intake
+                Consultation &bull; Client Intake
               </div>
               <h2 className="text-3xl sm:text-5xl font-normal text-black tracking-tight leading-[1.15]" style={{ fontFamily: 'Questrial, Arial, sans-serif' }}>
                 Discuss Your Unique HR &amp; Talent Requirements
@@ -38,26 +38,26 @@ export const ConsultationFormSection: React.FC = () => {
               </p>
             </div>
 
-            {/* What to Expect Card */}
+            {/* What to Expect Card (Black Card) */}
             <div 
-              className="bg-white p-8 sm:p-10 border border-gray-200 hover:border-black transition-all duration-300 space-y-6"
+              className="bg-black text-white p-8 sm:p-10 border border-black hover:bg-neutral-900 transition-all duration-300 space-y-6"
               style={{ borderRadius: '45px 0px 45px 45px' }}
             >
-              <h4 className="text-xs uppercase tracking-widest text-black font-semibold flex items-center gap-2">
-                <Sparkles className="w-4 h-4 text-[#116dff]" />
+              <h4 className="text-xs uppercase tracking-widest text-white font-semibold flex items-center gap-2">
+                <Sparkles className="w-4 h-4 text-white" />
                 What to Expect
               </h4>
-              <ul className="space-y-4 text-sm text-[#707070] font-normal">
+              <ul className="space-y-4 text-sm text-neutral-300 font-normal">
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-4 h-4 text-[#116dff] flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-4 h-4 text-white flex-shrink-0 mt-0.5" />
                   <span>Comprehensive assessment of your current hiring or compliance bottleneck</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-4 h-4 text-[#116dff] flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-4 h-4 text-white flex-shrink-0 mt-0.5" />
                   <span>No generic templates—practical, custom strategic frameworks tailored to your goals</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-4 h-4 text-[#116dff] flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-4 h-4 text-white flex-shrink-0 mt-0.5" />
                   <span>Strict confidentiality and non-disclosure standards</span>
                 </li>
               </ul>
@@ -65,10 +65,10 @@ export const ConsultationFormSection: React.FC = () => {
 
             {/* Trust Badge */}
             <div 
-              className="p-6 bg-[#eeeee8] border border-gray-300 flex items-center gap-4 text-xs text-[#707070] font-normal"
+              className="p-6 bg-white border border-gray-200 flex items-center gap-4 text-xs text-[#707070] font-normal"
               style={{ borderRadius: '25px 25px 25px 0px' }}
             >
-              <ShieldCheck className="w-6 h-6 text-[#116dff] flex-shrink-0" />
+              <ShieldCheck className="w-6 h-6 text-black flex-shrink-0" />
               <span className="leading-relaxed">
                 All client discussions and organizational data are protected under strict GDPR and enterprise security protocols.
               </span>
@@ -84,7 +84,7 @@ export const ConsultationFormSection: React.FC = () => {
               {submitted ? (
                 <div className="py-12 text-center space-y-5">
                   <div className="w-16 h-16 bg-[#e8e8e3] text-black rounded-full flex items-center justify-center mx-auto">
-                    <CheckCircle2 className="w-8 h-8 text-[#116dff]" />
+                    <CheckCircle2 className="w-8 h-8 text-black" />
                   </div>
                   <h3 className="text-2xl sm:text-3xl font-normal text-black" style={{ fontFamily: 'Questrial, Arial, sans-serif' }}>
                     Consultation Request Received

@@ -1,30 +1,30 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, CheckCircle2, Clock, Mail } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Mail } from 'lucide-react';
 
 export const CtaBannerSection: React.FC = () => {
   return (
     <section className="py-28 bg-[#f5f5f0] text-black border-t border-gray-300 font-sans relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Asymmetrical Split Bento Banner: 7-Col White + 5-Col Black Sculpted Block */}
+        {/* Asymmetrical Split Bento Banner */}
         <div className="grid grid-cols-1 lg:grid-cols-12 shadow-sm overflow-hidden">
           
           {/* Left Block (7 Cols): Warm White Editorial Invitation */}
           <div 
             className="lg:col-span-7 bg-white border border-gray-200 border-b-0 lg:border-b lg:border-r-0 p-8 sm:p-14 flex flex-col justify-between"
-            style={{ borderRadius: '45px 45px 0px 0px', ...(window.innerWidth >= 1024 ? { borderRadius: '45px 0px 0px 45px' } : {}) }}
+            style={{ borderRadius: '45px 0px 0px 45px' }}
           >
             <div>
               <div className="mb-6 uppercase tracking-[0.2em] text-[#707070] text-xs font-semibold">
-                Take Action &bull; Workforce Transformation
+                Workforce Architecture &bull; Consultation
               </div>
 
               <h2 
                 className="text-4xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-black leading-[1.08] mb-6"
                 style={{ fontFamily: 'Questrial, Arial, sans-serif' }}
               >
-                Ready to Elevate Your HR Architecture?
+                Ready to Elevate Your HR Strategy?
               </h2>
 
               <p className="text-lg text-[#707070] font-normal leading-relaxed max-w-xl mb-8">
@@ -34,43 +34,34 @@ export const CtaBannerSection: React.FC = () => {
 
             <div className="pt-6 border-t border-gray-100 flex flex-wrap items-center gap-6 text-sm text-[#707070]">
               <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-[#116dff]" />
-                <span>Zero obligation discovery</span>
+                <CheckCircle2 className="w-4 h-4 text-black" />
+                <span>Confidential consultation</span>
               </div>
               <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-[#116dff]" />
-                <span>Senior advisor match</span>
+                <CheckCircle2 className="w-4 h-4 text-black" />
+                <span>Direct partner match</span>
               </div>
             </div>
           </div>
 
-          {/* Right Block (5 Cols): Contrasting Deep Black Action Box */}
+          {/* Right Block (5 Cols): Deep Black Action Box */}
           <div 
             className="lg:col-span-5 bg-black text-white p-8 sm:p-14 border border-black flex flex-col justify-between"
-            style={{ borderRadius: '0px 0px 45px 45px', ...(window.innerWidth >= 1024 ? { borderRadius: '0px 45px 45px 0px' } : {}) }}
+            style={{ borderRadius: '0px 45px 45px 0px' }}
           >
             <div>
-              <div className="flex items-center justify-between mb-8">
-                <span 
-                  className="px-3.5 py-1 bg-neutral-900 border border-neutral-700 text-neutral-300 text-xs uppercase tracking-wider font-semibold"
-                  style={{ borderRadius: '12px 12px 12px 0px' }}
-                >
-                  Direct Intake
-                </span>
-                <div className="flex items-center gap-1.5 text-xs text-neutral-400">
-                  <Clock className="w-4 h-4 text-[#116dff]" />
-                  <span>30 mins</span>
-                </div>
+              <div className="text-xs uppercase tracking-wider text-neutral-400 font-semibold mb-6">
+                Discovery Session
               </div>
 
               <h3 
                 className="text-2xl sm:text-3xl font-normal text-white mb-4"
                 style={{ fontFamily: 'Questrial, Arial, sans-serif' }}
               >
-                Book a Confidential Diagnostic
+                Schedule an Assessment
               </h3>
               <p className="text-sm text-neutral-400 leading-relaxed font-normal mb-8">
-                We analyze your organizational chart and provide actionable recommendations tailored to your headcount goals.
+                We evaluate your organizational structure and provide actionable recommendations tailored to your upcoming milestones.
               </p>
             </div>
 

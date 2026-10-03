@@ -10,7 +10,7 @@ const LinkedInIcon: React.FC<{ className?: string }> = ({ className = "w-4 h-4" 
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#eeeee8] text-[#707070] text-sm border-t border-gray-300 font-sans">
+    <footer className="bg-white text-[#707070] text-sm border-t border-gray-200 font-sans">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         
         {/* Top Locations & Contacts Grid */}
@@ -22,7 +22,7 @@ export const Footer: React.FC = () => {
               <span className="text-xl font-normal tracking-tight text-black" style={{ fontFamily: 'Questrial, Arial, sans-serif' }}>
                 SalesPartners
               </span>
-              <span className="text-[10px] uppercase tracking-wider text-black bg-[#e8e8e3] px-2.5 py-0.5 rounded-full font-semibold">
+              <span className="text-[10px] uppercase tracking-wider text-white bg-black px-2.5 py-0.5 rounded-full font-semibold">
                 HR Solutions
               </span>
             </Link>

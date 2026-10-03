@@ -30,14 +30,14 @@ export const ImpactFrameworkSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Heading */}
-        <div className="text-center max-w-3xl mx-auto mb-20">
-          <div className="mb-6 uppercase tracking-[0.2em] text-[#707070] text-xs font-semibold">
-            Methodology &bull; Workflow Architecture
+        <div className="max-w-3xl mb-16">
+          <div className="mb-4 uppercase tracking-[0.2em] text-[#707070] text-xs font-semibold">
+            Methodology &bull; Advisory Roadmap
           </div>
-          <h2 className="text-4xl sm:text-6xl font-normal text-black tracking-tight" style={{ fontFamily: 'Questrial, Arial, sans-serif' }}>
+          <h2 className="text-4xl sm:text-6xl font-normal text-black tracking-tight leading-[1.08]" style={{ fontFamily: 'Questrial, Arial, sans-serif' }}>
             Our Impact Framework
           </h2>
-          <p className="mt-5 text-lg md:text-xl text-[#707070] leading-relaxed font-normal">
+          <p className="mt-4 text-lg text-[#707070] leading-relaxed font-normal">
             A proven four-stage roadmap transforming workforce potential into high-impact operational performance.
           </p>
         </div>
@@ -60,10 +60,6 @@ export const ImpactFrameworkSection: React.FC = () => {
                 <p className="text-sm text-[#707070] leading-relaxed font-normal">
                   {stage.description}
                 </p>
-              </div>
-
-              <div className="mt-8 pt-4 border-t border-gray-100 text-xs text-[#707070] font-normal">
-                Stage {stage.stage} of 04
               </div>
             </div>
           ))}

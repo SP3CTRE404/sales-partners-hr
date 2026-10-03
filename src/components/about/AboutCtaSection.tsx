@@ -28,7 +28,7 @@ export const AboutCtaSection: React.FC = () => {
             className="bg-white p-8 border border-gray-200 hover:border-black transition-all duration-300 text-center flex flex-col items-center justify-between"
             style={{ borderRadius: '25px 25px 25px 0px' }}
           >
-            <div className="w-12 h-12 rounded-full bg-[#e8e8e3] flex items-center justify-center text-[#116dff] mb-4">
+            <div className="w-12 h-12 rounded-full bg-[#e8e8e3] flex items-center justify-center text-black mb-4">
               <Mail className="w-5 h-5" />
             </div>
             <div>
@@ -39,16 +39,16 @@ export const AboutCtaSection: React.FC = () => {
           </div>
 
           <div 
-            className="bg-white p-8 border border-gray-200 hover:border-black transition-all duration-300 text-center flex flex-col items-center justify-between"
+            className="bg-black text-white p-8 border border-black hover:bg-neutral-900 transition-all duration-300 text-center flex flex-col items-center justify-between"
             style={{ borderRadius: '25px 25px 25px 0px' }}
           >
-            <div className="w-12 h-12 rounded-full bg-[#e8e8e3] flex items-center justify-center text-[#116dff] mb-4">
-              <Building className="w-5 h-5" />
+            <div className="w-12 h-12 rounded-full bg-neutral-800 flex items-center justify-center text-white mb-4">
+              <Building className="w-5 h-5 text-white" />
             </div>
             <div>
-              <p className="text-xs uppercase tracking-wider text-[#707070] font-semibold">Office Locations</p>
-              <p className="text-base font-normal text-black mt-1" style={{ fontFamily: 'Questrial, Arial, sans-serif' }}>Global Hubs</p>
-              <p className="text-sm text-[#707070] mt-1">London &bull; Bengaluru</p>
+              <p className="text-xs uppercase tracking-wider text-neutral-400 font-semibold">Office Locations</p>
+              <p className="text-base font-normal text-white mt-1" style={{ fontFamily: 'Questrial, Arial, sans-serif' }}>Global Hubs</p>
+              <p className="text-sm text-neutral-300 mt-1">London &bull; Bengaluru</p>
             </div>
           </div>
 
@@ -56,7 +56,7 @@ export const AboutCtaSection: React.FC = () => {
             className="bg-white p-8 border border-gray-200 hover:border-black transition-all duration-300 text-center flex flex-col items-center justify-between"
             style={{ borderRadius: '25px 25px 25px 0px' }}
           >
-            <div className="w-12 h-12 rounded-full bg-[#e8e8e3] flex items-center justify-center text-[#116dff] mb-4">
+            <div className="w-12 h-12 rounded-full bg-[#e8e8e3] flex items-center justify-center text-black mb-4">
               <Calendar className="w-5 h-5" />
             </div>
             <div>

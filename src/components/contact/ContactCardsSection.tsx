@@ -13,10 +13,10 @@ export const ContactCardsSection: React.FC = () => {
             style={{ borderRadius: '25px 25px 25px 0px' }}
           >
             <div>
-              <div className="w-12 h-12 rounded-full bg-[#e8e8e3] flex items-center justify-center text-[#116dff] mb-6">
+              <div className="w-12 h-12 rounded-full bg-[#e8e8e3] flex items-center justify-center text-black mb-6">
                 <Mail className="w-6 h-6" />
               </div>
-              <p className="text-xs uppercase tracking-widest text-[#707070] font-semibold mb-2">Direct Inquiries</p>
+              <p className="text-xs uppercase tracking-wider text-[#707070] font-semibold mb-2">Direct Inquiries</p>
               <h3 className="text-2xl font-normal text-black mb-2" style={{ fontFamily: 'Questrial, Arial, sans-serif' }}>
                 HR Advisory Lead
               </h3>
@@ -27,7 +27,7 @@ export const ContactCardsSection: React.FC = () => {
             <div className="pt-6 border-t border-gray-100 space-y-3 text-sm font-normal">
               <a
                 href="mailto:hello@salespartners.io"
-                className="text-black font-semibold hover:text-[#116dff] block transition-colors text-base"
+                className="text-black font-semibold hover:opacity-75 block transition-opacity text-base"
               >
                 hello@salespartners.io
               </a>
@@ -39,37 +39,37 @@ export const ContactCardsSection: React.FC = () => {
             </div>
           </div>
 
-          {/* Office Locations */}
+          {/* Office Locations (Black Card) */}
           <div 
-            className="bg-white p-8 border border-gray-200 hover:border-black transition-all duration-300 flex flex-col justify-between group"
+            className="bg-black text-white p-8 border border-black hover:bg-neutral-900 transition-all duration-300 flex flex-col justify-between group"
             style={{ borderRadius: '25px 25px 25px 0px' }}
           >
             <div>
-              <div className="w-12 h-12 rounded-full bg-[#e8e8e3] flex items-center justify-center text-[#116dff] mb-6">
-                <Building className="w-6 h-6" />
+              <div className="w-12 h-12 rounded-full bg-neutral-800 flex items-center justify-center text-white mb-6">
+                <Building className="w-6 h-6 text-white" />
               </div>
-              <p className="text-xs uppercase tracking-widest text-[#707070] font-semibold mb-2">Office Locations</p>
-              <h3 className="text-2xl font-normal text-black mb-2" style={{ fontFamily: 'Questrial, Arial, sans-serif' }}>
+              <p className="text-xs uppercase tracking-wider text-neutral-400 font-semibold mb-2">Office Locations</p>
+              <h3 className="text-2xl font-normal text-white mb-2" style={{ fontFamily: 'Questrial, Arial, sans-serif' }}>
                 Global Hubs
               </h3>
-              <p className="text-base text-[#707070] mb-6 leading-relaxed font-normal">
+              <p className="text-base text-neutral-300 mb-6 leading-relaxed font-normal">
                 Operating across primary commercial hubs in Europe and Asia.
               </p>
             </div>
-            <div className="pt-6 border-t border-gray-100 space-y-3 text-sm font-normal">
+            <div className="pt-6 border-t border-neutral-800 space-y-3 text-sm font-normal">
               <div>
-                <span className="font-semibold text-black flex items-center gap-1.5 text-xs uppercase tracking-wider">
-                  <MapPin className="w-3.5 h-3.5 text-black" />
+                <span className="font-semibold text-white flex items-center gap-1.5 text-xs uppercase tracking-wider">
+                  <MapPin className="w-3.5 h-3.5 text-white" />
                   London, UK (HQ)
                 </span>
-                <span className="text-xs text-[#707070] pl-5 block mt-0.5">Tetbury Place, 52 Upper Street, London N1 0HQ</span>
+                <span className="text-xs text-neutral-400 pl-5 block mt-0.5">Tetbury Place, 52 Upper Street, London N1 0HQ</span>
               </div>
               <div>
-                <span className="font-semibold text-black flex items-center gap-1.5 text-xs uppercase tracking-wider">
-                  <MapPin className="w-3.5 h-3.5 text-black" />
+                <span className="font-semibold text-white flex items-center gap-1.5 text-xs uppercase tracking-wider">
+                  <MapPin className="w-3.5 h-3.5 text-white" />
                   Bengaluru, India
                 </span>
-                <span className="text-xs text-[#707070] pl-5 block mt-0.5">20 Cunningham Rd, Vasanth Nagar, Bengaluru 560052</span>
+                <span className="text-xs text-neutral-400 pl-5 block mt-0.5">20 Cunningham Rd, Vasanth Nagar, Bengaluru 560052</span>
               </div>
             </div>
           </div>
@@ -80,10 +80,10 @@ export const ContactCardsSection: React.FC = () => {
             style={{ borderRadius: '25px 25px 25px 0px' }}
           >
             <div>
-              <div className="w-12 h-12 rounded-full bg-[#e8e8e3] flex items-center justify-center text-[#116dff] mb-6">
+              <div className="w-12 h-12 rounded-full bg-[#e8e8e3] flex items-center justify-center text-black mb-6">
                 <Calendar className="w-6 h-6" />
               </div>
-              <p className="text-xs uppercase tracking-widest text-[#707070] font-semibold mb-2">Schedule Meeting</p>
+              <p className="text-xs uppercase tracking-wider text-[#707070] font-semibold mb-2">Schedule Meeting</p>
               <h3 className="text-2xl font-normal text-black mb-2" style={{ fontFamily: 'Questrial, Arial, sans-serif' }}>
                 Discovery Session
               </h3>
@@ -92,7 +92,7 @@ export const ContactCardsSection: React.FC = () => {
               </p>
             </div>
             <div className="pt-6 border-t border-gray-100 flex items-center gap-2 text-sm text-black">
-              <Clock className="w-4 h-4 text-[#116dff]" />
+              <Clock className="w-4 h-4 text-black" />
               <span className="text-sm text-[#707070]">Response within 24 business hours</span>
             </div>
           </div>

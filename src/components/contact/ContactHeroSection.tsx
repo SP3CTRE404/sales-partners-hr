@@ -12,7 +12,7 @@ export const ContactHeroSection: React.FC = () => {
           className="text-4xl sm:text-6xl md:text-7xl font-normal text-black tracking-tight leading-[1.1] max-w-3xl mx-auto"
           style={{ fontFamily: 'Questrial, Arial, sans-serif' }}
         >
-          Let's Build a Stronger Workplace Together
+          Connect With Our Senior Advisory Team
         </h1>
         <p className="mt-6 text-lg md:text-xl text-[#707070] max-w-2xl mx-auto leading-relaxed font-normal">
           Connect with our senior advisory team to discover how our tailored HR strategies can support your company's growth objectives.

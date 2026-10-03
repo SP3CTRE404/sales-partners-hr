@@ -49,8 +49,8 @@ export const Header: React.FC = () => {
 
   return (
     <header className="sticky top-0 z-40 bg-[#f5f5f0]/95 backdrop-blur-md border-b border-gray-300 transition-all font-sans">
-      {/* Top Bar - Clean Warm Minimalist Bar */}
-      <div className="bg-[#eeeee8] text-xs text-[#707070] hidden md:block border-b border-gray-300/80">
+      {/* Top Bar - Clean Minimalist Bar */}
+      <div className="bg-white/80 text-xs text-[#707070] hidden md:block border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-9">
             {/* Left Topbar */}
@@ -76,8 +76,8 @@ export const Header: React.FC = () => {
 
             {/* Right Topbar */}
             <div className="flex items-center space-x-4">
-              <span className="text-[#707070] text-xs uppercase tracking-wider font-semibold">
-                Workforce Architecture &bull; People-First HR
+              <span className="text-[#707070] text-xs font-normal">
+                London &bull; Bengaluru
               </span>
               <div className="h-3 w-px bg-gray-300"></div>
               <a
@@ -107,17 +107,12 @@ export const Header: React.FC = () => {
                 e.currentTarget.style.display = 'none';
               }}
             />
-            <div className="flex flex-col">
-              <div className="flex items-center gap-2">
-                <span className="text-xl font-normal tracking-tight text-black group-hover:opacity-80 transition-opacity" style={{ fontFamily: 'Questrial, Arial, sans-serif' }}>
-                  SalesPartners
-                </span>
-                <span className="px-2 py-0.5 rounded-full text-[10px] font-semibold tracking-wider uppercase bg-[#e8e8e3] text-black">
-                  HR
-                </span>
-              </div>
-              <span className="text-[10px] uppercase tracking-[0.15em] text-[#707070] font-medium -mt-0.5">
-                Workforce Architecture
+            <div className="flex items-center gap-2">
+              <span className="text-xl font-normal tracking-tight text-black group-hover:opacity-80 transition-opacity" style={{ fontFamily: 'Questrial, Arial, sans-serif' }}>
+                SalesPartners
+              </span>
+              <span className="px-2 py-0.5 rounded-full text-[10px] font-semibold tracking-wider uppercase bg-black text-white">
+                HR
               </span>
             </div>
           </Link>
@@ -190,7 +185,7 @@ export const Header: React.FC = () => {
                   className={`px-4 py-3 transition-colors flex items-center justify-between text-sm ${
                     active
                       ? 'bg-[#e8e8e3] text-black font-semibold'
-                      : 'text-[#707070] hover:bg-[#eeeee8] hover:text-black'
+                      : 'text-[#707070] hover:bg-white hover:text-black'
                   }`}
                   style={{ borderRadius: '15px 15px 15px 0px' }}
                 >
