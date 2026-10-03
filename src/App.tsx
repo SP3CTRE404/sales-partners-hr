@@ -1,32 +1,38 @@
-import React from 'react';
-import { Header } from './components/Header';
-import { SideNavigation } from './components/SideNavigation';
-import { Hero } from './components/Hero';
-import { WhoWeAre } from './components/WhoWeAre';
-import { Difference } from './components/Difference';
-import { Opportunity } from './components/Opportunity';
-import { JoinTeam } from './components/JoinTeam';
-import { Clients } from './components/Clients';
-import { ContactSection } from './components/ContactSection';
-import { Footer } from './components/Footer';
+import { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { Header } from './components/layout/Header';
+import { Footer } from './components/layout/Footer';
+import { HomePage } from './pages/HomePage';
+import { AboutPage } from './pages/AboutPage';
+import { ContactPage } from './pages/ContactPage';
 
-export const App: React.FC = () => {
-  return (
-    <div id="top" className="min-h-screen bg-white text-slate-800 flex flex-col antialiased selection:bg-emerald-500/20 selection:text-slate-900 relative">
-      <Header />
-      <SideNavigation />
-      <main className="flex-grow">
-        <Hero />
-        <WhoWeAre />
-        <Difference />
-        <Opportunity />
-        <JoinTeam />
-        <Clients />
-        <ContactSection />
-      </main>
-      <Footer />
-    </div>
-  );
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
 };
+
+export const App = () => {
+  return (
+    <Router>
+      <ScrollToTop />
+      <div className="min-h-screen flex flex-col bg-[#f5f5f0]">
+        <Header />
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
+  );
+}
 
 export default App;
