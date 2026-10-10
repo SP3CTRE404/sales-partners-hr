@@ -1,6 +1,7 @@
 import React from 'react';
 import { UserCheck, Shield } from 'lucide-react';
 import { LeadershipMember } from '../../types';
+import HoverToZoom from '../common/HoverToZoom';
 
 const leaders: (LeadershipMember & { icon: React.ReactNode; borderRadius: string; offsetClass: string; bgClass: string })[] = [
   {
@@ -59,8 +60,8 @@ export const LeadershipSection: React.FC = () => {
             </div>
           </div>
 
-          {/* Right Column (7 Cols): Staggered Offset Profile Cards */}
-          <div className="lg:col-span-7 space-y-8">
+          {/* Right Column (7 Cols): Staggered Offset Profile Cards with HoverToZoom */}
+          <HoverToZoom className="lg:col-span-7 space-y-8" zoomScale="scale-[1.03]">
             {leaders.map((leader, index) => {
               const isDark = index === 0;
               return (
@@ -68,8 +69,8 @@ export const LeadershipSection: React.FC = () => {
                   key={leader.title}
                   className={`p-8 sm:p-12 border transition-all flex flex-col justify-between group ${leader.offsetClass} ${
                     isDark 
-                      ? 'bg-black text-white border-black hover:bg-neutral-900' 
-                      : 'bg-white text-black border-gray-200 hover:border-black'
+                      ? 'bg-black text-white border-black' 
+                      : 'bg-white text-black border-gray-200'
                   }`}
                   style={{ borderRadius: leader.borderRadius }}
                 >
@@ -108,7 +109,7 @@ export const LeadershipSection: React.FC = () => {
                 </div>
               );
             })}
-          </div>
+          </HoverToZoom>
 
         </div>
 

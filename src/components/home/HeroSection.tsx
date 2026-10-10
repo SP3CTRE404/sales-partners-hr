@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, ShieldCheck, Zap, Award, Layers, CheckCircle2 } from 'lucide-react';
+import FoldText from '../common/FoldText';
+import HoverToZoom from '../common/HoverToZoom';
 
 export const HeroSection: React.FC = () => {
   return (
@@ -18,11 +20,24 @@ export const HeroSection: React.FC = () => {
           {/* Left Column: Bold Editorial Typography & Clean Actions */}
           <div className="lg:col-span-8 text-left">
             <h1 
-              className="text-5xl sm:text-7xl md:text-8xl lg:text-[96px] font-normal text-black tracking-tight leading-[1.05] mb-8"
-              style={{ fontFamily: 'Questrial, Arial, sans-serif' }}
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-[68px] xl:text-[74px] font-bold text-black tracking-tight leading-[1.08] mb-8"
+              style={{ fontFamily: 'Questrial, Inter, sans-serif' }}
             >
-              Built for Performance<br />
-              Designed to Scale
+              <FoldText
+                text={"Built for Performance\nDesigned to Scale"}
+                splitBy="char"
+                hinge="top"
+                trigger="scroll"
+                duration={0.65}
+                stagger={0.035}
+                ease="power3.out"
+                perspective={700}
+                creaseShading={0.55}
+                fontSize="inherit"
+                fontWeight={700}
+                color="#000000"
+                style={{ fontFamily: 'Questrial, Inter, sans-serif', lineHeight: '1.08' }}
+              />
             </h1>
 
             <p className="text-lg md:text-2xl text-[#707070] font-normal max-w-2xl leading-relaxed mb-10">
@@ -54,7 +69,7 @@ export const HeroSection: React.FC = () => {
           {/* Right Column: Clean Asymmetric Retention Card */}
           <div className="lg:col-span-4 lg:pt-4">
             <div 
-              className="bg-white border border-gray-200 p-8 sm:p-10 hover:border-black transition-all"
+              className="bg-white border border-gray-200 p-8 sm:p-10 transition-all"
               style={{ borderRadius: '40px 0px 40px 40px' }}
             >
               <div className="text-xs uppercase tracking-wider text-[#707070] font-semibold mb-6">
@@ -93,11 +108,11 @@ export const HeroSection: React.FC = () => {
 
         {/* Asymmetrical Staggered Capability Grid */}
         <div className="pt-10 border-t border-gray-300">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <HoverToZoom className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 py-4">
             
             {/* Card 1 */}
             <div 
-              className="bg-white border border-gray-200 p-8 hover:border-black transition-all flex flex-col justify-between group"
+              className="bg-white border border-gray-200 p-8 flex flex-col justify-between"
               style={{ borderRadius: '30px 30px 30px 0px' }}
             >
               <div>
@@ -115,7 +130,7 @@ export const HeroSection: React.FC = () => {
 
             {/* Card 2: Shifted Down Black Card */}
             <div 
-              className="bg-black text-white p-8 border border-black hover:bg-neutral-900 transition-all flex flex-col justify-between lg:translate-y-6 group"
+              className="bg-black text-white p-8 border border-black flex flex-col justify-between lg:translate-y-6"
               style={{ borderRadius: '0px 30px 30px 30px' }}
             >
               <div>
@@ -133,7 +148,7 @@ export const HeroSection: React.FC = () => {
 
             {/* Card 3 */}
             <div 
-              className="bg-white border border-gray-200 p-8 hover:border-black transition-all flex flex-col justify-between group"
+              className="bg-white border border-gray-200 p-8 flex flex-col justify-between"
               style={{ borderRadius: '30px 0px 30px 30px' }}
             >
               <div>
@@ -151,7 +166,7 @@ export const HeroSection: React.FC = () => {
 
             {/* Card 4: Dark Contrast Shifted Down */}
             <div 
-              className="bg-black text-white p-8 border border-black hover:bg-neutral-900 transition-all flex flex-col justify-between lg:translate-y-6 group"
+              className="bg-black text-white p-8 border border-black flex flex-col justify-between lg:translate-y-6"
               style={{ borderRadius: '30px 30px 0px 30px' }}
             >
               <div>
@@ -167,7 +182,7 @@ export const HeroSection: React.FC = () => {
               </div>
             </div>
 
-          </div>
+          </HoverToZoom>
         </div>
 
       </div>

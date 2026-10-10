@@ -1,5 +1,6 @@
 import React from 'react';
 import { Shield, Heart, Cpu, Award, Users2 } from 'lucide-react';
+import HoverToZoom from '../common/HoverToZoom';
 
 export const CoreValuesSection: React.FC = () => {
   return (
@@ -22,12 +23,12 @@ export const CoreValuesSection: React.FC = () => {
           </p>
         </div>
 
-        {/* Asymmetrical Bento Grid of Core Values */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        {/* Asymmetrical Bento Grid of Core Values with HoverToZoom */}
+        <HoverToZoom className="grid grid-cols-1 lg:grid-cols-12 gap-8" zoomScale="scale-[1.03]">
           
           {/* Card 1 (4 Cols): Integrity First */}
           <div
-            className="lg:col-span-4 bg-white p-8 sm:p-10 border border-gray-200 hover:border-black transition-all flex flex-col justify-between group"
+            className="lg:col-span-4 bg-white p-8 sm:p-10 border border-gray-200 flex flex-col justify-between group"
             style={{ borderRadius: '35px 35px 35px 0px' }}
           >
             <div>
@@ -45,7 +46,7 @@ export const CoreValuesSection: React.FC = () => {
 
           {/* Card 2 (8 Cols): Wide Feature Card (Black Card) - People-Centric Approach */}
           <div
-            className="lg:col-span-8 bg-black text-white p-8 sm:p-12 border border-black hover:bg-neutral-900 transition-all flex flex-col justify-between group relative overflow-hidden"
+            className="lg:col-span-8 bg-black text-white p-8 sm:p-12 border border-black flex flex-col justify-between group relative overflow-hidden"
             style={{ borderRadius: '0px 40px 40px 40px' }}
           >
             <div>
@@ -68,7 +69,7 @@ export const CoreValuesSection: React.FC = () => {
 
           {/* Card 3 (4 Cols): Innovation in Execution (White Card) */}
           <div
-            className="lg:col-span-4 bg-white p-8 sm:p-10 border border-gray-200 hover:border-black transition-all flex flex-col justify-between group"
+            className="lg:col-span-4 bg-white p-8 sm:p-10 border border-gray-200 flex flex-col justify-between group"
             style={{ borderRadius: '35px 0px 35px 35px' }}
           >
             <div>
@@ -86,7 +87,7 @@ export const CoreValuesSection: React.FC = () => {
 
           {/* Card 4 (4 Cols): Excellence in Service (Black Card) */}
           <div
-            className="lg:col-span-4 bg-black text-white p-8 sm:p-10 border border-black hover:bg-neutral-900 transition-all flex flex-col justify-between group"
+            className="lg:col-span-4 bg-black text-white p-8 sm:p-10 border border-black flex flex-col justify-between group"
             style={{ borderRadius: '0px 35px 35px 35px' }}
           >
             <div>
@@ -104,7 +105,7 @@ export const CoreValuesSection: React.FC = () => {
 
           {/* Card 5 (4 Cols): Collaborative Partnership */}
           <div
-            className="lg:col-span-4 bg-white p-8 sm:p-10 border border-gray-200 hover:border-black transition-all flex flex-col justify-between group"
+            className="lg:col-span-4 bg-white p-8 sm:p-10 border border-gray-200 flex flex-col justify-between group"
             style={{ borderRadius: '35px 35px 0px 35px' }}
           >
             <div>
@@ -120,7 +121,7 @@ export const CoreValuesSection: React.FC = () => {
             </div>
           </div>
 
-        </div>
+        </HoverToZoom>
 
       </div>
     </section>

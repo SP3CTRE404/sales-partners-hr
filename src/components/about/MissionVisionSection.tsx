@@ -1,17 +1,18 @@
 import React from 'react';
 import { Target, Compass, CheckCircle2, Globe2 } from 'lucide-react';
+import HoverToZoom from '../common/HoverToZoom';
 
 export const MissionVisionSection: React.FC = () => {
   return (
     <section className="py-24 bg-[#f5f5f0] text-black border-t border-gray-300 font-sans">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Asymmetrical 7-5 Split Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        {/* Asymmetrical 7-5 Split Grid with HoverToZoom */}
+        <HoverToZoom className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch" zoomScale="scale-[1.03]">
           
           {/* Mission: 7 Columns */}
           <div 
-            className="lg:col-span-7 bg-white p-8 sm:p-12 border border-gray-200 hover:border-black transition-all flex flex-col justify-between group"
+            className="lg:col-span-7 bg-white p-8 sm:p-12 border border-gray-200 flex flex-col justify-between group"
             style={{ borderRadius: '45px 45px 0px 45px' }}
           >
             <div>
@@ -38,7 +39,7 @@ export const MissionVisionSection: React.FC = () => {
 
           {/* Vision: 5 Columns (Black Card) */}
           <div 
-            className="lg:col-span-5 bg-black text-white p-8 sm:p-12 border border-black hover:bg-neutral-900 transition-all flex flex-col justify-between group"
+            className="lg:col-span-5 bg-black text-white p-8 sm:p-12 border border-black flex flex-col justify-between group"
             style={{ borderRadius: '0px 45px 45px 45px' }}
           >
             <div>
@@ -63,7 +64,7 @@ export const MissionVisionSection: React.FC = () => {
             </div>
           </div>
 
-        </div>
+        </HoverToZoom>
 
       </div>
     </section>

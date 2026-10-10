@@ -1,5 +1,6 @@
 import React from 'react';
 import { ImpactFrameworkStage } from '../../types';
+import HoverToZoom from '../common/HoverToZoom';
 
 const stages: ImpactFrameworkStage[] = [
   {
@@ -43,11 +44,11 @@ export const ImpactFrameworkSection: React.FC = () => {
         </div>
 
         {/* 4 Framework Detailed Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <HoverToZoom className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 py-4">
           {stages.map((stage) => (
             <div
               key={stage.stage}
-              className="bg-white p-8 border border-gray-200 hover:border-black transition-all duration-300 flex flex-col justify-between group"
+              className="bg-white p-8 border border-gray-200 flex flex-col justify-between"
               style={{ borderRadius: '25px 25px 25px 0px' }}
             >
               <div>
@@ -63,7 +64,7 @@ export const ImpactFrameworkSection: React.FC = () => {
               </div>
             </div>
           ))}
-        </div>
+        </HoverToZoom>
       </div>
     </section>
   );

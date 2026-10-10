@@ -1,4 +1,5 @@
 import React from 'react';
+import FoldText from '../common/FoldText';
 
 export const ContactHeroSection: React.FC = () => {
   return (
@@ -9,10 +10,24 @@ export const ContactHeroSection: React.FC = () => {
           Connect &bull; Direct HR Advisory Line
         </div>
         <h1 
-          className="text-4xl sm:text-6xl md:text-7xl font-normal text-black tracking-tight leading-[1.1] max-w-3xl mx-auto"
-          style={{ fontFamily: 'Questrial, Arial, sans-serif' }}
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-[68px] font-bold text-black tracking-tight leading-[1.1] max-w-3xl mx-auto"
+          style={{ fontFamily: 'Questrial, Inter, sans-serif' }}
         >
-          Connect With Our Senior Advisory Team
+          <FoldText
+            text={"Connect With Our\nSenior Advisory Team"}
+            splitBy="char"
+            hinge="top"
+            trigger="scroll"
+            duration={0.65}
+            stagger={0.035}
+            ease="power3.out"
+            perspective={700}
+            creaseShading={0.55}
+            fontSize="inherit"
+            fontWeight={700}
+            color="#000000"
+            style={{ fontFamily: 'Questrial, Inter, sans-serif', lineHeight: '1.1' }}
+          />
         </h1>
         <p className="mt-6 text-lg md:text-xl text-[#707070] max-w-2xl mx-auto leading-relaxed font-normal">
           Connect with our senior advisory team to discover how our tailored HR strategies can support your company's growth objectives.

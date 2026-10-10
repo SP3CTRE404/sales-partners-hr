@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Building, Calendar, ArrowRight } from 'lucide-react';
+import HoverToZoom from '../common/HoverToZoom';
 
 export const AboutCtaSection: React.FC = () => {
   return (
@@ -22,10 +23,10 @@ export const AboutCtaSection: React.FC = () => {
           Connect with our advisory team to discover how our tailored HR solutions can support your company's growth objectives.
         </p>
 
-        {/* 3 Setup Cards with Asymmetric Shape */}
-        <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-6 text-left max-w-4xl mx-auto">
+        {/* 3 Setup Cards with Asymmetric Shape & HoverToZoom */}
+        <HoverToZoom className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-6 text-left max-w-4xl mx-auto" zoomScale="scale-[1.04]">
           <div 
-            className="bg-white p-8 border border-gray-200 hover:border-black transition-all duration-300 text-center flex flex-col items-center justify-between"
+            className="bg-white p-8 border border-gray-200 transition-all duration-300 text-center flex flex-col items-center justify-between"
             style={{ borderRadius: '25px 25px 25px 0px' }}
           >
             <div className="w-12 h-12 rounded-full bg-[#e8e8e3] flex items-center justify-center text-black mb-4">
@@ -39,7 +40,7 @@ export const AboutCtaSection: React.FC = () => {
           </div>
 
           <div 
-            className="bg-black text-white p-8 border border-black hover:bg-neutral-900 transition-all duration-300 text-center flex flex-col items-center justify-between"
+            className="bg-black text-white p-8 border border-black transition-all duration-300 text-center flex flex-col items-center justify-between"
             style={{ borderRadius: '25px 25px 25px 0px' }}
           >
             <div className="w-12 h-12 rounded-full bg-neutral-800 flex items-center justify-center text-white mb-4">
@@ -53,7 +54,7 @@ export const AboutCtaSection: React.FC = () => {
           </div>
 
           <div 
-            className="bg-white p-8 border border-gray-200 hover:border-black transition-all duration-300 text-center flex flex-col items-center justify-between"
+            className="bg-white p-8 border border-gray-200 transition-all duration-300 text-center flex flex-col items-center justify-between"
             style={{ borderRadius: '25px 25px 25px 0px' }}
           >
             <div className="w-12 h-12 rounded-full bg-[#e8e8e3] flex items-center justify-center text-black mb-4">
@@ -65,7 +66,7 @@ export const AboutCtaSection: React.FC = () => {
               <p className="text-sm text-[#707070] mt-1">30-Minute Overview</p>
             </div>
           </div>
-        </div>
+        </HoverToZoom>
 
         <div className="mt-14 flex justify-center">
           <Link

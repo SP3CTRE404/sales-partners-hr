@@ -1,12 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Mail, Phone, ArrowRight } from 'lucide-react';
-
-const LinkedInIcon: React.FC<{ className?: string }> = ({ className = "w-4 h-4" }) => (
-  <svg className={className} fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-  </svg>
-);
+import { Menu, X, ArrowRight } from 'lucide-react';
 
 export const Header: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -49,50 +43,6 @@ export const Header: React.FC = () => {
 
   return (
     <header className="sticky top-0 z-40 bg-[#f5f5f0]/95 backdrop-blur-md border-b border-gray-300 transition-all font-sans">
-      {/* Top Bar - Clean Minimalist Bar */}
-      <div className="bg-white/80 text-xs text-[#707070] hidden md:block border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-9">
-            {/* Left Topbar */}
-            <div className="flex items-center space-x-6">
-              <a
-                href="mailto:hello@salespartners.io"
-                className="hover:text-black transition-colors flex items-center gap-1.5 text-xs tracking-tight"
-              >
-                <Mail className="w-3.5 h-3.5 text-black" />
-                <span>hello@salespartners.io</span>
-              </a>
-
-              <div className="h-3 w-px bg-gray-300"></div>
-
-              <a
-                href="tel:+447428724380"
-                className="hover:text-black transition-colors flex items-center gap-1.5 text-xs tracking-tight"
-              >
-                <Phone className="w-3.5 h-3.5 text-black" />
-                <span>+44 7428 724380</span>
-              </a>
-            </div>
-
-            {/* Right Topbar */}
-            <div className="flex items-center space-x-4">
-              <span className="text-[#707070] text-xs font-normal">
-                London &bull; Bengaluru
-              </span>
-              <div className="h-3 w-px bg-gray-300"></div>
-              <a
-                href="https://www.linkedin.com/company/salespartnersio"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#707070] hover:text-black transition-colors"
-                aria-label="LinkedIn"
-              >
-                <LinkedInIcon className="w-3.5 h-3.5" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
 
       {/* Main Nav Bar */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

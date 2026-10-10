@@ -1,5 +1,7 @@
 import React from 'react';
 import { Target } from 'lucide-react';
+import FoldText from '../common/FoldText';
+import HoverToZoom from '../common/HoverToZoom';
 
 export const AboutHeroSection: React.FC = () => {
   return (
@@ -17,17 +19,31 @@ export const AboutHeroSection: React.FC = () => {
           {/* Left Column (7 Cols) */}
           <div className="lg:col-span-7">
             <h1 
-              className="text-5xl sm:text-7xl lg:text-8xl font-normal text-black tracking-tight leading-[1.05] mb-8"
-              style={{ fontFamily: 'Questrial, Arial, sans-serif' }}
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-[68px] xl:text-[74px] font-bold text-black tracking-tight leading-[1.08] mb-8"
+              style={{ fontFamily: 'Questrial, Inter, sans-serif' }}
             >
-              Bridging Strategy and People.
+              <FoldText
+                text={"Bridging Strategy\nand People."}
+                splitBy="char"
+                hinge="top"
+                trigger="scroll"
+                duration={0.65}
+                stagger={0.035}
+                ease="power3.out"
+                perspective={700}
+                creaseShading={0.55}
+                fontSize="inherit"
+                fontWeight={700}
+                color="#000000"
+                style={{ fontFamily: 'Questrial, Inter, sans-serif', lineHeight: '1.08' }}
+              />
             </h1>
 
             <p className="text-xl text-[#707070] font-normal leading-relaxed max-w-2xl mb-8">
               Founded on the conviction that employees are an organization's greatest strategic lever, we build resilient, compliant, and thriving workplaces for high-performing teams.
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl">
+            <HoverToZoom className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl" zoomScale="scale-[1.04]">
               <div 
                 className="bg-white border border-gray-200 p-6 flex flex-col justify-between"
                 style={{ borderRadius: '25px 25px 25px 0px' }}
@@ -53,13 +69,13 @@ export const AboutHeroSection: React.FC = () => {
                 </div>
                 <div className="text-xs text-[#707070] mt-1">No junior handoffs on advisory</div>
               </div>
-            </div>
+            </HoverToZoom>
           </div>
 
           {/* Right Column (5 Cols): Black Philosophy Bento Card */}
           <div className="lg:col-span-5 lg:pt-4">
             <div 
-              className="bg-black text-white border border-black p-8 sm:p-12 hover:bg-neutral-900 transition-all"
+              className="bg-black text-white border border-black p-8 sm:p-12 transition-all"
               style={{ borderRadius: '45px 0px 45px 45px' }}
             >
               <div className="w-12 h-12 rounded-full bg-neutral-800 flex items-center justify-center text-white mb-6">

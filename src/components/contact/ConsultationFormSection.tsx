@@ -40,7 +40,7 @@ export const ConsultationFormSection: React.FC = () => {
 
             {/* What to Expect Card (Black Card) */}
             <div 
-              className="bg-black text-white p-8 sm:p-10 border border-black hover:bg-neutral-900 transition-all duration-300 space-y-6"
+              className="bg-black text-white p-8 sm:p-10 border border-black transition-all duration-300 space-y-6"
               style={{ borderRadius: '45px 0px 45px 45px' }}
             >
               <h4 className="text-xs uppercase tracking-widest text-white font-semibold flex items-center gap-2">

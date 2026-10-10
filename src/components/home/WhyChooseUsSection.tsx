@@ -2,6 +2,7 @@ import React from 'react';
 import { AdvantageItem } from '../../types';
 import { ArrowRight, ShieldCheck, Cpu, Headphones, Award, CheckCircle2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import HoverToZoom from '../common/HoverToZoom';
 
 const advantages: (AdvantageItem & { 
   icon: React.ReactNode; 
@@ -96,47 +97,49 @@ export const WhyChooseUsSection: React.FC = () => {
           </div>
 
           {/* Right Column: Staggered Offset Cascade of Asymmetric Cards */}
-          <div className="lg:col-span-7 space-y-6">
-            <div className="mb-2">
+          <div className="lg:col-span-7">
+            <div className="mb-4">
               <span className="text-xs uppercase tracking-[0.2em] text-[#707070] font-semibold">
                 Strategic Advantages &bull; Unmatched Execution
               </span>
             </div>
 
-            {advantages.map((item, index) => {
-              const isDark = index % 2 === 1;
-              return (
-                <div
-                  key={item.advantage}
-                  className={`p-8 sm:p-10 transition-all duration-300 flex flex-col justify-between group ${item.offsetClass} ${
-                    isDark 
-                      ? 'bg-black text-white border border-black hover:bg-neutral-900' 
-                      : 'bg-white text-black border border-gray-200 hover:border-black'
-                  }`}
-                  style={{ borderRadius: item.borderRadius }}
-                >
-                  <div>
-                    <div className={`w-12 h-12 rounded-full flex items-center justify-center mb-6 ${
-                      isDark ? 'bg-neutral-800' : 'bg-[#e8e8e3]'
-                    }`}>
-                      {React.cloneElement(item.icon as React.ReactElement, {
-                        className: `w-5 h-5 ${isDark ? 'text-white' : 'text-black'}`
-                      })}
-                    </div>
+            <HoverToZoom className="space-y-6" zoomScale="scale-[1.03]">
+              {advantages.map((item, index) => {
+                const isDark = index % 2 === 1;
+                return (
+                  <div
+                    key={item.advantage}
+                    className={`p-8 sm:p-10 transition-all duration-300 flex flex-col justify-between group ${item.offsetClass} ${
+                      isDark 
+                        ? 'bg-black text-white border border-black' 
+                        : 'bg-white text-black border border-gray-200'
+                    }`}
+                    style={{ borderRadius: item.borderRadius }}
+                  >
+                    <div>
+                      <div className={`w-12 h-12 rounded-full flex items-center justify-center mb-6 ${
+                        isDark ? 'bg-neutral-800' : 'bg-[#e8e8e3]'
+                      }`}>
+                        {React.cloneElement(item.icon as React.ReactElement, {
+                          className: `w-5 h-5 ${isDark ? 'text-white' : 'text-black'}`
+                        })}
+                      </div>
 
-                    <h3 
-                      className={`text-2xl font-normal mb-3 ${isDark ? 'text-white' : 'text-black'}`}
-                      style={{ fontFamily: 'Questrial, Arial, sans-serif' }}
-                    >
-                      {item.advantage}
-                    </h3>
-                    <p className={`text-base leading-relaxed font-normal ${isDark ? 'text-neutral-300' : 'text-[#707070]'}`}>
-                      {item.meaning}
-                    </p>
+                      <h3 
+                        className={`text-2xl font-normal mb-3 ${isDark ? 'text-white' : 'text-black'}`}
+                        style={{ fontFamily: 'Questrial, Arial, sans-serif' }}
+                      >
+                        {item.advantage}
+                      </h3>
+                      <p className={`text-base leading-relaxed font-normal ${isDark ? 'text-neutral-300' : 'text-[#707070]'}`}>
+                        {item.meaning}
+                      </p>
+                    </div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </HoverToZoom>
           </div>
 
         </div>

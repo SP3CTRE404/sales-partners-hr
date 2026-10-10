@@ -1,15 +1,16 @@
 import React from 'react';
 import { Mail, Building, Calendar, Phone, MapPin, Clock } from 'lucide-react';
+import HoverToZoom from '../common/HoverToZoom';
 
 export const ContactCardsSection: React.FC = () => {
   return (
     <section className="py-16 bg-[#f5f5f0] text-black border-t border-gray-300 font-sans">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <HoverToZoom className="grid grid-cols-1 md:grid-cols-3 gap-6" zoomScale="scale-[1.04]">
           
           {/* Direct Inquiries */}
           <div 
-            className="bg-white p-8 border border-gray-200 hover:border-black transition-all duration-300 flex flex-col justify-between group"
+            className="bg-white p-8 border border-gray-200 transition-all duration-300 flex flex-col justify-between group"
             style={{ borderRadius: '25px 25px 25px 0px' }}
           >
             <div>
@@ -41,7 +42,7 @@ export const ContactCardsSection: React.FC = () => {
 
           {/* Office Locations (Black Card) */}
           <div 
-            className="bg-black text-white p-8 border border-black hover:bg-neutral-900 transition-all duration-300 flex flex-col justify-between group"
+            className="bg-black text-white p-8 border border-black transition-all duration-300 flex flex-col justify-between group"
             style={{ borderRadius: '25px 25px 25px 0px' }}
           >
             <div>
@@ -76,7 +77,7 @@ export const ContactCardsSection: React.FC = () => {
 
           {/* Schedule Meeting */}
           <div 
-            className="bg-white p-8 border border-gray-200 hover:border-black transition-all duration-300 flex flex-col justify-between group"
+            className="bg-white p-8 border border-gray-200 transition-all duration-300 flex flex-col justify-between group"
             style={{ borderRadius: '25px 25px 25px 0px' }}
           >
             <div>
@@ -97,7 +98,7 @@ export const ContactCardsSection: React.FC = () => {
             </div>
           </div>
 
-        </div>
+        </HoverToZoom>
       </div>
     </section>
   );
