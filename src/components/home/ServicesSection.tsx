@@ -1,5 +1,5 @@
 import React from 'react';
-import { Users, ShieldCheck, HeartHandshake, CreditCard, ArrowUpRight, CheckCircle2 } from 'lucide-react';
+import { Users, ShieldCheck, HeartHandshake, ArrowUpRight, CheckCircle2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import HoverToZoom from '../common/HoverToZoom';
 
@@ -135,9 +135,9 @@ export const ServicesSection: React.FC = () => {
             </div>
           </div>
 
-          {/* Bento Card 3: 5-Column White Card (Culture) */}
+          {/* Bento Card 3: 12-Column White Card (Culture) */}
           <div
-            className="lg:col-span-5 bg-white border border-gray-200 p-8 sm:p-10 min-h-[350px] flex flex-col justify-between group relative"
+            className="lg:col-span-12 bg-white border border-gray-200 p-8 sm:p-10 min-h-[280px] flex flex-col justify-between group relative"
             style={{ borderRadius: '40px 0px 40px 40px' }}
           >
             <div>
@@ -161,59 +161,13 @@ export const ServicesSection: React.FC = () => {
               >
                 Employee Engagement &amp; Culture
               </h3>
-              <p className="text-[#555555] text-sm sm:text-base leading-relaxed font-normal mb-6">
+              <p className="text-[#555555] text-sm sm:text-base leading-relaxed font-normal mb-6 max-w-2xl">
                 Build high-performing, inclusive workplace cultures through engagement surveys, leadership coaching, and retention initiatives.
               </p>
             </div>
 
             <div className="pt-5 border-t border-gray-100 text-sm text-[#707070]">
               <strong className="text-black font-semibold">Key Benefit:</strong> Improves employee retention and drives workplace productivity.
-            </div>
-          </div>
-
-          {/* Bento Card 4: 7-Column Black Card (Payroll) */}
-          <div
-            className="lg:col-span-7 bg-black text-white border border-black p-8 sm:p-10 min-h-[350px] flex flex-col justify-between group relative"
-            style={{ borderRadius: '40px 40px 40px 0px' }}
-          >
-            <div>
-              <div className="flex items-center justify-between mb-6">
-                <div className="w-12 h-12 rounded-full bg-neutral-800 flex items-center justify-center text-white">
-                  <CreditCard className="w-5 h-5 text-white" />
-                </div>
-
-                <Link
-                  to="/contact"
-                  className="w-10 h-10 flex items-center justify-center text-white border border-white hover:bg-white hover:text-black transition-colors"
-                  style={{ borderRadius: '12px 12px 12px 0px' }}
-                  aria-label="Inquire about Payroll"
-                >
-                  <ArrowUpRight className="w-4 h-4" />
-                </Link>
-              </div>
-
-              <h3 
-                className="text-2xl sm:text-3xl font-normal text-white mb-3" 
-                style={{ fontFamily: 'Questrial, Arial, sans-serif' }}
-              >
-                Payroll &amp; Benefits Administration
-              </h3>
-              <p className="text-neutral-300 text-base sm:text-lg leading-relaxed font-normal mb-6 max-w-xl">
-                Streamline administrative overhead with automated payroll processing, competitive benefits design, and efficient onboarding workflows.
-              </p>
-            </div>
-
-            <div className="pt-5 border-t border-neutral-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-sm">
-              <p className="text-neutral-400">
-                <strong className="text-white font-semibold">Key Benefit:</strong> Scalable HR infrastructure that saves leadership valuable time.
-              </p>
-              <Link
-                to="/contact"
-                className="inline-flex items-center gap-1 font-semibold text-white hover:opacity-75 transition-opacity flex-shrink-0"
-              >
-                <span>Learn more</span>
-                <ArrowUpRight className="w-3.5 h-3.5" />
-              </Link>
             </div>
           </div>
 

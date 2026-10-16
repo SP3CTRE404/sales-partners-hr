@@ -34,8 +34,8 @@ export const ContactCardsSection: React.FC = () => {
               </a>
               <div className="text-[#707070] text-sm flex items-center gap-2 pt-1">
                 <Phone className="w-4 h-4 text-black" />
-                <span className="text-black font-medium">UK:</span>
-                <a href="tel:+447428724380" className="hover:text-black transition-colors">+44 7428 724380</a>
+                <span className="text-black font-medium">IN:</span>
+                <a href="tel:+919873489490" className="hover:text-black transition-colors">+91 9873489490</a>
               </div>
             </div>
           </div>
@@ -58,20 +58,18 @@ export const ContactCardsSection: React.FC = () => {
               </p>
             </div>
             <div className="pt-6 border-t border-neutral-800 space-y-3 text-sm font-normal">
-              <div>
-                <span className="font-semibold text-white flex items-center gap-1.5 text-xs uppercase tracking-wider">
+              <a
+                href="https://maps.app.goo.gl/Tnk8PYSkUmyjwDpCA?g_st=aw"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group/map block hover:opacity-85 transition-opacity"
+              >
+                <span className="font-semibold text-white flex items-center gap-1.5 text-xs uppercase tracking-wider group-hover/map:underline">
                   <MapPin className="w-3.5 h-3.5 text-white" />
-                  London, UK (HQ)
+                  New Delhi, India
                 </span>
-                <span className="text-xs text-neutral-400 pl-5 block mt-0.5">Tetbury Place, 52 Upper Street, London N1 0HQ</span>
-              </div>
-              <div>
-                <span className="font-semibold text-white flex items-center gap-1.5 text-xs uppercase tracking-wider">
-                  <MapPin className="w-3.5 h-3.5 text-white" />
-                  Bengaluru, India
-                </span>
-                <span className="text-xs text-neutral-400 pl-5 block mt-0.5">20 Cunningham Rd, Vasanth Nagar, Bengaluru 560052</span>
-              </div>
+                <span className="text-xs text-neutral-400 pl-5 block mt-0.5">Saket, New Delhi, India</span>
+              </a>
             </div>
           </div>
 

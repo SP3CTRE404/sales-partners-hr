@@ -41,7 +41,7 @@ export const HeroSection: React.FC = () => {
             </h1>
 
             <p className="text-lg md:text-2xl text-[#707070] font-normal max-w-2xl leading-relaxed mb-10">
-              From executive recruitment to modern workplace compliance, we design tailored human resource strategies that drive growth, culture, and operational excellence.
+              Recruitment for International Clients in Unitid States of America and United Kingdom helping the growth of businesses with our fast-paced faced to faced methods.
             </p>
 
             {/* Asymmetrical Actions */}
